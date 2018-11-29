@@ -18,9 +18,9 @@ $model = isset($data['model']) ? $data['model'] : null;
         </div>
         <div class="form-group">
             <label for="url" class="control-label">
-                url <span class="required">(required)</span>
+                image <span class="required">(required)</span>
             </label>
-            <input type="text" class="form-control" name="url" value="<?= $model ? $model['url'] : '' ?>" required>
+            <input type="text" class="form-control" name="url" value="<?= $model ? $model['image'] : '' ?>" required>
         </div>
         <div class="form-group">
             <label for="content" class="control-label">

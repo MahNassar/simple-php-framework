@@ -20,7 +20,6 @@ class Articles extends Model
                 // ['lengthMin', 255]
             ],
             'url' => [
-                'required',
                 'url'
             ],
             'content' => [

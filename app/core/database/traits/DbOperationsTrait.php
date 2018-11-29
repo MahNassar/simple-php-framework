@@ -4,6 +4,8 @@ namespace core\database\traits;
 
 use core\database\Query;
 use core\database\Insert;
+use core\database\Update;
+use core\database\Delete;
 
 trait DbOperationsTrait
 {
@@ -54,5 +56,19 @@ trait DbOperationsTrait
         
         return $insert->run();
 
+    }
+
+    public static function update(Array $data, Array $where)
+    {
+        $update = new Update(static::getTableName(), $data, $where);
+        
+        return $update->run();
+    }
+
+    public static function delete(Array $where)
+    {
+        $delete = new Delete(static::getTableName(), $where);
+        
+        return $delete->run();
     }
 }

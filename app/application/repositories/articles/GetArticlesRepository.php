@@ -20,6 +20,7 @@ class GetArticlesRepository implements GetRepositoryInterface
                                         'articles.content AS content',
                                         'articles.url AS image',
                                         'articles.created_at AS created_at',
+                                        'articles.author_id AS author_id',
                                         'count(comments.id) AS comments_count',
                                         'users.name AS author_name',
                                     ],
@@ -44,6 +45,7 @@ class GetArticlesRepository implements GetRepositoryInterface
                                         'articles.content AS content',
                                         'articles.url AS image',
                                         'articles.created_at AS created_at',
+                                        'articles.author_id AS author_id',
                                         'users.name AS author_name',
                                     ],
                                 'left join' => [

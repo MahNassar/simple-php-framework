@@ -6,7 +6,7 @@ return [
     'db' => [
         'type' => 'mysql',
         'host' => 'database',
-        'name' => 'check24',
+        'name' => 'db',
         'username' => 'root',
         'password' => '',
         'charset' => 'utf8',

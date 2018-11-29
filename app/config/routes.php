@@ -7,6 +7,7 @@ $routesArr = [
         "/site/imprint" => "SiteController.imprint",
         "/" => "ArticlesController.index",
         "/articles" => "ArticlesController.index",
+        "/articles/edit/:id" => "ArticlesController.update",
         "/articles/create" => "ArticlesController.create",
         "/articles/:id" => "ArticlesController.view",
     ];
