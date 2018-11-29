@@ -1,7 +1,7 @@
 # native-php-blog
 
 php mvc framework with simple blog example
-tools :- php7.1, composer, phpunit, docker
+tools :- php7.1, composer, phpunit, mysql, docker
 
 ### installation guide :- 
 
@@ -18,22 +18,22 @@ tools :- php7.1, composer, phpunit, docker
 
 ##### add this url to your machine hosts 
 
-```check24.dev```
+```myblog.dev```
 
 
 ##### create workout database 
 
-```CREATE SCHEMA `check24` DEFAULT CHARACTER SET utf8 ;```
+```CREATE SCHEMA `db` DEFAULT CHARACTER SET utf8 ;```
 
 
 ##### create testing database 
 
-```CREATE SCHEMA `check24_test` DEFAULT CHARACTER SET utf8 ;```
+```CREATE SCHEMA `db_test` DEFAULT CHARACTER SET utf8 ;```
 
 
 ##### run migration (import dumps)
 
-in both "check24", "check24_test" databases import ```app/migrations/create_tables.sql``` then ```app/migrations/insert_dummy_data```
+in both "db", "db_test" databases import ```app/migrations/create_tables.sql``` then ```app/migrations/insert_dummy_data```
 
 
 ##### running the unit test
