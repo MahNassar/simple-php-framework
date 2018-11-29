@@ -1,7 +1,7 @@
 # native-php-blog
 
 php mvc framework with simple blog example
-tools :- php7.1, composer, phpunit, mysql, docker
+tools :- php7.1, composer, phpunit, mysql, docker, bootstrap
 
 ### installation guide :- 
 
