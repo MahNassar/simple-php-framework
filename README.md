@@ -1,4 +1,4 @@
-# native-php-blog
+# simple php framework
 
 php mvc framework with simple blog example
 <br>
